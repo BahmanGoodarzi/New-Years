@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=K2D:ital,wght@1,500&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;1,300&family=Sansita+Swashed:wght@300&family=Shizuru&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "K2D", sans-serif;
+  background-image: url(./img/pexels-pixabay-235621.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -6rem;
+}
+
+.fa-snowflake {
+  position: absolute;
+  top: -14px;
+  left: 20px;
+  color: rgb(242, 239, 255);
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(98vh);
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: rgb(41, 41, 41);
+}
+
+.big-text {
+  font-size: 3.5rem;
+  margin: 0 18px;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+}
+
+.countdowon-cantainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ss {
+  text-align: center;
+}
+
+.ss span {
+  font-size: 1.25rem;
+  color: rgb(41, 41, 41);
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+    align-items: center;
+  }
+  .big-text {
+    font-size: 2rem;
+    align-items: center;
+  }
+}
